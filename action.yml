@@ -12,6 +12,12 @@ inputs:
   flowIntegration: # string
     description: 'Name of the integration that is executing flow'
     required: false
+  flowShellInterpreter: # string
+    description: 'The default interpreter used to execute shell commands.'
+    required: false
+  flowShellKeepTempFiles: # bool
+    description: 'Do not delete temporary files created by the shell command execution'
+    required: false
   alwaysOverrideStoredLogicSchema: # bool
     description: 'When generating SQL for createProcedure, should the procedure schema be forced to the default schema if no schemaName attribute is set?'
     required: false
@@ -190,6 +196,8 @@ runs:
     - ${{ inputs.flowFile }}
     - ${{ inputs.flowFileStrictParsing }}
     - ${{ inputs.flowIntegration }}
+    - ${{ inputs.flowShellInterpreter }}
+    - ${{ inputs.flowShellKeepTempFiles }}
     - ${{ inputs.alwaysOverrideStoredLogicSchema }}
     - ${{ inputs.autoReorg }}
     - ${{ inputs.changelogLockPollRate }}
