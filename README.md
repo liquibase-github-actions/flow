@@ -6,7 +6,7 @@ Run a series of commands contained in one or more stages, as configured in a liq
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: liquibase-github-actions/flow@v4.17.0
+- uses: liquibase-github-actions/flow@v4.17.1
   with:
     # The path to the configuration yaml file which contains one or more "stages" of commands to be executed in a liquibase flow operation. Defaults to yaml file named "liquibase.flowfile.yaml" in the current working directory.
     # string
@@ -35,7 +35,7 @@ The liquibase flow action accepts all valid liquibase global options as optional
 ```yaml
 steps:
   - uses: actions/checkout@v3
-  - uses: liquibase-github-actions/flow@v4.17.0
+  - uses: liquibase-github-actions/flow@v4.17.1
     with:
       headless: true
       licenseKey: ${{ secrets.LIQUIBASE_LICENSE_KEY }}
