@@ -19,7 +19,7 @@ steps:
     # Optional
     flowFileStrictParsing: ""
 
-    # The default interpreter used to execute shell commands.
+    # The default interpreter used to execute shell commands. EXAMPLES: bash, sh, cmd.
     # string
     # Optional
     flowShellInterpreter: ""
