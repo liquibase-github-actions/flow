@@ -1,8 +1,7 @@
 # Liquibase Flow Action
 Official GitHub Action to run Liquibase Flow in your GitHub Action Workflow. For more information on how flow works visit the [Official Liquibase Documentation](https://docs.liquibase.com/commands/home.html).
 ## Flow
-[PRO]
-Run a series of commands contained in one or more stages, as configured in a liquibase flow-file.
+[PRO] Run a series of commands contained in one or more stages, as configured in a liquibase flow-file.
 ## Usage
 ```yaml
 steps:
